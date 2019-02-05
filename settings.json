@@ -1,0 +1,90 @@
+{
+  "replacements": {
+    "<-->": "$\\longleftrightarrow$",
+    "<--": "$\\longleftarrow$",
+    "-->": "$\\longrightarrow$",
+    "<->": "$\\leftrightarrow$", 
+    "<-": "$\\leftarrow$",   
+    "->": "$\\rightarrow$",
+    "<==>": "$\\Longleftrightarrow$",
+    "<==": "$\\Longleftarrow$",
+    "==>": "$\\Longrightarrow$",
+    "<=>": "$\\Leftrightarrow$",
+    "<=": "$\\Leftarrow$",
+    "=>": "$\\Rightarrow$",
+    "[[ctrl]]": "\\key{}",
+    "[[alt]]": "\\key{}",
+    "[[tab]]": "\\key{}",
+    "[[shift]]": "\\key{}",
+    "[[f4]]": "\\key{}",
+    "[[click]]": "\\key{}",
+    "[[f5]]": "\\key{}",
+    "[[f1]]": "\\key{}",
+    "[[plus]]": "\\key{}",
+    "[[minus]]": "\\key{}",
+    "[[esc]]": "\\key{}",
+    "[[end]]": "\\key{}",
+    "[[home]]": "\\key{}",
+    "[[middle click]]": "\\key{}",
+    "[[down wide]]": "\\key{⇓}",
+    "[[pgdn]]": "\\key{}",
+    "[[updown wide]]": "\\key{⇕}",
+    "[[ins]]": "\\key{}",
+    "[[del]]": "\\key{}",
+    "[[right click]]": "\\key{}",
+    "[[space]]": "\\key{}",
+    "[[pgup]]": "\\key{}",
+    "[[f2]]": "\\key{}",
+    "[[f9]]": "\\key{}",
+    "[[enter]]": "\\key{}",
+    "[[backspace]]": "\\key{}",
+    "[[pad+]]": "\\key{}",
+    "[[pad-]]": "\\key{}",
+    "[[padx]]": "\\key{}",
+    "[[f11]]": "\\key{}",
+    "[[f12]]": "\\key{}",
+    "[[": "\\key{",
+    "]]": "}"
+  },
+  "variables": [
+    "lang=de-CH",
+    "papersize=A4",
+    "fontsize=10pt",
+    "documentclass=scrartcl",
+    "mainfont=Libertinus Serif",
+    "mainfontoptions=Numbers=OldStyle",
+    "mainfontoptions=Ligatures=Discretionary",
+    "sansfont=Libertinus Sans",
+    "monofont=Monofur",
+    "sansfontoptions=Numbers=OldStyle",
+    "header-includes=\\newfontfamily{\\keyfont}[Scale=MatchUppercase]{Libertinus Keyboard}",
+    "header-includes=\\newcommand{\\key}[1]{{\\keyfont #1}}",
+    "header-includes=\\usepackage{metalogo}",
+    "header-includes=\\usepackage{fancyheadings}",
+    "header-includes=\\setlength\\headheight{26pt}",
+    "urlcolor=blue",
+    "links-as-notes"
+  ],
+  "extensions": [
+    "yaml_metadata_block"
+  ],
+  "options": {
+    "numbered_headings": "True",
+    "toc": "True",
+    "lof": "True",
+    "lot": "False",
+    "verbose": "False"
+  },
+  "loglevel": "INFO",
+  "files": [
+    {
+      "in_file": "KiCadWorkshop.md",
+      "out_file": "KiCadWorkshop.pdf",
+      "template": "default.latex"
+    },
+    {
+      "in_file": "KiCadWorkshop.md",
+      "out_file": "KiCadWorkshop.revealjs"
+    }
+  ]
+}
