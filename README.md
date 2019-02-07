@@ -13,8 +13,7 @@ Werde auch von Zeit zu Zeit Releases machen.
 
 ### Windows
 
-1. Auf http://www.kicad-pcb.org/ Installer runterladen und installieren.
-2. Auf https://kicad.github.io/ die Libraries runterladen und wie dort beschrieben installieren.
+Auf http://www.kicad-pcb.org/ Installer runterladen und installieren. Die wichtigsten Bibliotheken kommen mit
 
 ### Linux
 
