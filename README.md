@@ -15,7 +15,7 @@ I'm gonna release builds from time to time
 
 #### Windows
 
-Go to http://www.kicad-pcb.org/ and grab the installer, the standardlib comes free, it's pretty powerfull.
+Go to http://www.kicad-pcb.org/ and grab the installer, the standardlib comes with it and is pretty powerfull.
 
 #### Linux
 
