@@ -79,12 +79,11 @@
   "files": [
     {
       "in_file": "KiCadWorkshop.md",
-      "out_file": "KiCadWorkshop.pdf",
-      "template": "default.latex"
+      "out_file": "KiCadWorkshop.revealjs"
     },
     {
-      "in_file": "KiCadWorkshop.md",
-      "out_file": "KiCadWorkshop.revealjs"
+      "in_file": "KiCadWorkshop_en.md",
+      "out_file": "KiCadWorkshop_en.revealjs"
     }
   ]
 }
