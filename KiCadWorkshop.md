@@ -1,4 +1,4 @@
-# KiCAD Einführung
+![Kicad Logo](images/KiCad-Logo-klein.png)
 ### Tillo Bosshart
 
 --- 
@@ -15,20 +15,20 @@
 
 ---
 ### Workflow
-1. Schema zeichnen
-2. Schema annotieren
-3. Layout erstellen
-4. Daten erzeugen
+* Schema zeichnen
+* Schema annotieren
+* Layout erstellen
+* Daten erzeugen
 
 ---
 ### Schema zeichnen
-1. Symbole plazieren
-2. Verbindung zeichnen
+* Symbole plazieren
+* Verbindung zeichnen
 
 ---
 ### Schema annotieren
-1. Komponenten nummerieren
-2. Schemasymbole mit Footprints verbinden
+* Komponenten nummerieren
+* Schemasymbole mit Footprints verbinden
 
 ---
 ### Schema in das Layout übertragen
@@ -37,6 +37,14 @@
 
 ---
 ### Routen
-1. Tipp: Immer mit den Diff-Pairs beginnen
-2. Tipp: Auf einer Lage hauptsächlich horizontal und auf einer anderen hauptsächlich vertikal routen
-3. Ob und wie Vias tented werden ist wohl eine religiöse Frage.
+* **Tipp:** Immer mit den Diff-Pairs beginnen
+* **Tipp:** Auf einer Lage hauptsächlich horizontal und auf einer anderen hauptsächlich vertikal routen
+* Ob und wie Vias tented werden ist wohl eine religiöse Frage.
+
+---
+### Gerber erzeugen
+
+---
+### SVG2Shenzen
+* Inkscape plugin zum Gerber erzeugen
+* Umweg über KiCAD
