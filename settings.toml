@@ -1,11 +1,33 @@
 [[files]]
 title="Make your own shitty addon"
-subtitle="Welcome to badgelife"
+subtitle="Welcome to #badgelife"
 author="Tillo"
 type="md2revealjs"
 converter="pandoc"
 infile="KiCadWorkshop_en.md"
 outfile="slides.html"
 variables=[
-    "theme=blood"
+    "theme=moon"
+]
+
+[[files]]
+title="Make your own shitty addon"
+subtitle="Welcome to \\#badgelife"
+author="Tillo"
+date="9.2.2020"
+type="md2pdf" 
+infile="docu.md"
+outfile="docu.pdf"
+pdfengine="xelatex" # pdflatex, lualatex, xelatex, latexmk, tectonic, wkhtmltopdf, weasyprint, prince, context, and pdfroff
+converter="pandoc"
+toc=true
+numbered=true
+verbose=true
+codestyle="pygments" # pygments, kate, monochrome, espesso, haddock, zenburn, tango
+variables=[
+    "documentclass=scrartcl",
+    "fontsize=10pt",
+    "papersize=a4",
+    "lang=en",
+    "urlcolor=red"
 ]

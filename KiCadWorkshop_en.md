@@ -4,39 +4,76 @@
 - Electronics Engineer by day
 - Dev-board hoarder by night
 
-## SAO
+## PCB art
+- done a long time by various folks
+- boomed in recent years as #badgelife
+- badges for hacker cons
+
+## Micronoise by SGMK
+![](images/Micronoise.png)
+
+## Viking Badge by Thomas Flummer
+![](images/viking-badge.jpg)
+
+## Jogjarmageddon by dusjagr 
+![](images/Jogjarmageddon.jpg)
+
+## Queercon badge 2016
+![](images/queercon.jpg)
+
+## Shitty Add-On
 - addon for badges, originally for DEF CON
 - easy entry to PCB art
-- MZ badge will have some
+- MZ badge will have some connectors too
 
-## SAO Spec
+## Some Shitty Add-Ons
+![](images/resize/shittyadd-ons.png)
+
+## SAO 1.69bis specs
 - 3V3 and GND
 - I²C
 - Two GPIO
 - Max power 1.1 millihorsepower (250mA @ 3.3V)
 - Serial Port on one of the badge
 
-## KiCAD
-![KiCAD](images/kicad.png)
+## Tools we will use
+- Inkscape
+- svg2shenzen
+- KiCad
 
-## KiCAD
+## Inkscape
+- Vectorgraphics editor
+- FOSS 
+
+## SVG2Shenzen
+- An inkscape plugin for PCB art.
+- Layer "_disable" disables that Layer.
+- The stuff you want to have in your design needs to be "dark".
+- made by Budi from Indonesia 
+- @manticore_ on the twitters
+- badgeek on github
+
+## KiCad
+![](images/kicad.png)
+
+## KiCad
 - EDA (Electronics Design Automation Suite)
 - FOSS (mostly GPL)
 - Used to be pretty bad in the past
 - Now: developed at CERN
 
-## General workflow
+## EDA workflow
 - Draw schematics 
 - Annotate schematics (in KiCAD also: assign footprints to symbol) 
 - Layout 
 - Generate data 
 
+## Schematics editor
+![](images/schema_editor.png)
+
 ## Draw schematics
 - Place symbols and connect them.
 - Make new components if needed.
-
-## Draw schematics
-![Schematic editor](images/schema_editor.png)
 
 ## Make components
 - Symbol
@@ -51,13 +88,13 @@
 - Before KiCAD 5 it was needed to generate a netlist and load it into the layout.
 - KiCAS 5 can do it in one step.
 
+## Layout editor
+![](images/layout_editor.png)
+
 ## Layout
 - **Tip:** Always start with diff pairs.
 - **Tip:** Route mainly horizontal on one layer and mainly vertical on another.
 - Tented vias: Some say do it, some say don't. I don't really know.
-
-## Layout
-![Layout editor](images/layout_editor.png)
 
 ## Layerstack
 - 2 layer: parts & routing & GND, routing & GND or VCC
@@ -73,25 +110,11 @@
 - Check if every layer you need is in the output.
 - Check the gerbers after generating them.
 
-## SVG2Shenzen
-* An inkscape plugin for PCB art.
-* Layer "_disable" disables that Layer.
-* The stuff you want to have in your design needs to be "dark".
-* made by Budi from Indonesia 
-* @manticore_ on the twitters
-* badgeek on github
-
 ## kitspace.org
-* Sharing is caring
-* Upload gerbers and BOM
-* Connects to github
-* Made by Kaspar
-* kasbah on github
+- Sharing is caring
+- Upload gerbers and BOM
+- Connects to github
+- Made by Kaspar
+- kasbah on github
 
-## Hack all the things
-
-## Links
-- [KiCAD getting started](http://docs.kicad-pcb.org/5.1.2/en/getting_started_in_kicad/getting_started_in_kicad.html)
-- [shitty add on](https://hackaday.com/2019/03/20/introducing-the-shitty-add-on-v1-69bis-standard/)
-- [svg2shenzhen](https://github.com/badgeek/svg2shenzhen)
-- [badgelive parts KiCAD libs](https://github.com/devec0/badgelife-parts)
+## Hack the planet!
