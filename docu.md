@@ -60,20 +60,21 @@ Since Kicads Library management is a bit quirky I usually just put the used exte
 # Workflow
 
 $$
+\colorlet{lcnorm}{Black}
 \colorlet{inkscape}{Green}
-\colorlet{lcnorm}{Blue}
-\colorlet{lccong}{Red}
+\colorlet{schematic}{Blue}
+\colorlet{pcb}{Red}
 
 \providecommand{\cmark}[2][]{\relax} 
 \begin{tikzpicture}[%
     >=triangle 60,              % Nice arrows; your taste may be different
     start chain=going below,    % General flow is top-to-bottom
-    node distance=6mm and 60mm, % Global setup of box spacing
+    node distance=6mm and 30mm, % Global setup of box spacing
     every join/.style={norm},   % Default linetype for connecting boxes
     ]
 \tikzset{
   base/.style={draw, on chain, on grid, align=center, minimum height=4ex},
-  proc/.style={base, rectangle, text width=8em},
+  proc/.style={base, rectangle, text width=5em},
   test/.style={base, diamond, aspect=2, text width=5em},
   term/.style={proc, rounded corners},
   % coord node style is used for placing corners of connecting lines
@@ -89,14 +90,34 @@ $$
 }
 % -------------------------------------------------
 % Start by placing the nodes
-\node [proc]                            (p0)    {Initialize the svg2shenzen plugin};                              
-\node [proc, fill=inkscape!25, join]            {Draw in Inkscape};
-\node [term, fill=inkscape!25, join]            {Convert objects to paths};
-\node [proc, join]                              {Export to Kicad};
-\node [proc, join]                              {Draw Schematic};
-\node [test, join]                      (t0)    {Symbol esxists};
-\node [coord, left=of t0]  (c5)  {}; \cmark{5}   
-\node [coord, right=of t0] (c7)  {}; \cmark{7}   
+
+% coord
+\node [proc]  (c0)  {1};
+\node [proc, right=of c0]  (c1)  {2};
+\node [proc, right=of c1]  (c2)  {3};
+\node [proc, right=of c2]  (c3)  {4};
+\node [proc, right=of c3]  (c4)  {5};
+
+\node [proc, fill=inkscape!25]                  (p0)    {Initialize the \textbf{svg2shenzen} plugin};                              
+\node [proc, fill=inkscape!25, join]                    {Draw in \textbf{Inkscape}};
+\node [term, fill=inkscape!25, join]                    {Convert objects to paths};
+\node [proc, fill=inkscape!25, join]                    {Export to \textbf{Kicad}};
+\node [proc, fill=schematic!25, join, right=of p0] (p1)    {Draw Schematic};
+\node [test, fill=schematic!25, join]            (t0)    {Symbols exists};
+\node [proc, fill=schematic!25]                  (p2)    {Anotate symb};
+\node [proc, fill=schematic!25, right=of t0]    (p3)    {Make symbols};
+
+
+
+
+\node [coord, right=of t0]  (c1)  {}; \cmark{7}  ;
+
+\path (t0.south) to node [near start, xshift=1em] {yes} (p2);
+    \draw [*->,lcnorm] (t0.south) -- (p2);
+
+\path (t0.east) to node [yshift=-1em] {no} (c1); 
+    \draw [*->,lcnorm] (t0.east) -- (p3);
+
 %\path (t6.south) to node [near start, xshift=1em] {$y$} (t7); 
 %  \draw [*->,inkscape] (t6.south) -- (t7); 
 %\path (t7.east) to node [yshift=-1em] {$k \leq 0$} (c7); 
