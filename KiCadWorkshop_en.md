@@ -119,4 +119,6 @@
 - Made by Kaspar
 - kasbah on github
 
-## Hack the planet!
+--------
+
+![](images/hacktheplanet.gif)
