@@ -1,2 +1,8 @@
 *.html
 *.pdf
+flowchart/flexible-flow-chart.aux
+flowchart/flexible-flow-chart.synctex.gz
+flowchart/flexible-flow-chart.log
+flowchart/flexible-flow-chart.fls
+flowchart/flexible-flow-chart.fdb_latexmk
+flowchart/flexible-flow-chart.dvi
