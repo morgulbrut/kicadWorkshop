@@ -1,0 +1,92 @@
+\documentclass[x11names]{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,chains}
+
+\begin{document}
+
+\colorlet{inkscape}{Green3}
+\colorlet{schematic}{Blue3}
+\colorlet{pcb}{Red3}
+\colorlet{lcnorm}{darkgray}
+
+\providecommand{\cmark}[2][]{\relax} 
+\begin{tikzpicture}[%
+    >=triangle 60,              % Nice arrows; your taste may be different
+    start chain=going below,    % General flow is top-to-bottom
+    node distance=6mm and 40mm, % Global setup of box spacing
+    every join/.style={norm},   % Default linetype for connecting boxes
+    ]
+\tikzset{
+  base/.style={draw, on chain, on grid, align=center, minimum height=4ex},
+  proc/.style={base, rectangle, text width=6em},
+  test/.style={proc, rounded corners},
+  coord/.style={coordinate, on chain, on grid, node distance=6mm and 15mm},
+  nmark/.style={draw, cyan, circle, font={\sffamily\bfseries}},
+  norm/.style={->, draw, lcnorm},
+  free/.style={->, draw, inkscape},
+  cong/.style={->, draw, lccong},
+  it/.style={font={\small\itshape}}
+}
+
+\node [proc, fill=inkscape!25]                  (p0)    {Initialize the \textbf{svg2shenzen} plugin};
+\node [proc, fill=inkscape!25, join]                    {Draw in \textbf{Inkscape}};
+\node [proc, fill=inkscape!25, join]                    {Convert objects to paths};
+\node [proc, fill=inkscape!25, join]            (p1)    {Export to \textbf{Kicad}};
+\node [proc, fill=schematic!25, right=of p0]    (p2)    {Draw \textbf{schematic}};
+\node [test, fill=schematic!25]                 (t0)    {Symbol exists};
+\node [proc, fill=schematic!25]                 (p3)    {Place symbol};
+\node [test, fill=schematic!25, join]           (t1)    {Symbols left};
+\node [proc, fill=schematic!25]                 (p5)    {Annotate schematic};
+\node [proc, fill=schematic!25, join]                   {Associate footprints};
+\node [proc, fill=schematic!25, join]           (p6)    {Update PCB};
+\node [proc, fill=schematic!25, right=of t0]    (p4)    {Make symbol};
+\node [proc, fill=pcb!25, right=of t1]          (p7)    {Draw \textbf{layout}};
+\node [test, fill=pcb!25]                       (t2)    {Footprint exists};
+\node [proc, fill=pcb!25]                       (p8)    {Place footprint};
+\node [test, fill=pcb!25, join]                 (t3)    {Footprints left};
+\node [proc, fill=pcb!25]                       (p9)    {Export \textbf{gerber}};
+\node [proc, fill=pcb!25, right=of t2]          (p11)   {Make footprint};
+
+\node [coord, right=of p0]  (c0)  {};
+\node [coord, below=of p2]  (c1)  {};
+\node [coord, right=of t0]  (c2)  {};
+\node [coord, left=of t1, xshift=-1em]   (c3)  {};
+\node [coord, right=of t1]  (c4)  {};
+
+\node [coord, below=of p7]  (c5)  {};
+\node [coord, right=of t2]  (c6)  {};
+\node [coord, left=of t3, xshift=-1em]   (c7)  {};
+\node [coord, right=of t3]  (c8) {};
+
+\path (t0.south) to node [near start, xshift=1em] {y} (p3);
+    \draw [->,lcnorm] (t0.south) -- (p3);
+
+\path (t0.east) to node [near start,yshift=-.5em] {n} (p4);
+    \draw [->,lcnorm] (t0.east) -- (p4);
+
+\path (t1.west) to node [near start, xshift=-1em] {y} (p5);
+    \draw [->,lcnorm] (t1.west) -- (c3) |- (c1);
+
+\path (t1.south) to node [near start, xshift=1em] {n} (p5);
+    \draw [->,lcnorm] (t1.south) -- (p5);
+
+\path (t2.south) to node [near start, xshift=1em] {y} (p8);
+    \draw [->,lcnorm] (t2.south) -- (p8);
+
+\path (t2.east) to node [near start, yshift=-.5em] {n} (p11);
+    \draw [->,lcnorm] (t2.east) -- (p11);
+
+\path (t3.west) to node [near start, xshift=-1em] {y} (p9);
+    \draw [->,lcnorm] (t3.west) -- (c7) |- (c5);
+
+\path (t3.south) to node [near start, xshift=1em] {n} (p9);
+    \draw [->,lcnorm] (t3.south) -- (p9);
+
+\draw [->,lcnorm] (p1.east) -|  (c0) -- (p2);
+\draw [->,lcnorm] (p2.south) --  (t0);
+\draw [->,lcnorm] (p4.south) |-  (p3);
+\draw [->,lcnorm] (p6.east) -|  (c4) -- (p7);
+\draw [->,lcnorm] (p7.south) --  (t2);
+
+\end{tikzpicture}
+\end{document}
