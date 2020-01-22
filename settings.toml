@@ -1,7 +1,4 @@
 [[files]]
-title="Make your own shitty addon"
-subtitle="Welcome to #badgelife"
-author="Tillo"
 type="md2revealjs"
 converter="pandoc"
 infile="KiCadWorkshop_en.md"
