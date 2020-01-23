@@ -8,3 +8,5 @@
 *.dvi
 SOA_examples/.svg2shenzhen-cache/
 SOA_examples/tv-b-gone/tbg_sao.kicad_pcb-bak
+
+*.code-workspace
