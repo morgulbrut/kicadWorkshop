@@ -1,3 +1,0 @@
-Build with LaTeX
-
-convert -density 300 flexible-flow-chart.pdf -quality 90 workflow.png
