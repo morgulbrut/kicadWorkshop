@@ -1,7 +1,6 @@
 ---
 header-includes: 
-    \usepackage{tikz}
-    \usetikzlibrary{shapes,arrows,chains}
+   \usepackage{menukeys}
 ---
 
 
@@ -45,6 +44,8 @@ See **Windows**
 
 An Inkscape plugin we use for PCB art, get it from [https://github.com/badgeek/svg2shenzhen](https://github.com/badgeek/svg2shenzhen) and install it as described there.
 
+**Linux:** be sure to have lxml for python2 installed.
+
 ## Shitty Add-On library
 
 Get it from [https://hackaday.io/project/52950/files](https://hackaday.io/project/52950/files)
@@ -64,6 +65,56 @@ Since Kicads Library management is a bit quirky I usually just put the used exte
 ![General workflow](images/workflow.png)
 
 That's roughly the workflow I use. You maybe found one which suits you better.
+
+## svg2shenzen & Inkscape
+
+1. Initalize a new drawing using *Extensions* $\rightarrow$ *Svg2Shenzhen* $\rightarrow$ *Prepare Document...*
+2. Draw your thing. 
+   1. Keep in mind, there are some layer combinations that make no sense.
+   2. If the layers has the suffix *disabled* it is disabled. Rename it from *<X>-disabled* to *<X>*.
+   3. Check if the layers are dark enough.
+3. Convert objects to paths.
+4. Export to KiCad.
+   1. Check *Open Kicad after export?*.
+   2. Uncheck *Open PCBWay after export?*.
+   
+## KiCad
+
+### Draw schematics
+- Place components using 
+
+### Make components
+- Symbol
+- Footprint
+- Add 3d model(s) to a footprint (if wanted)
+
+### Annotate schematics
+- Automatically number the components.
+- Manually assign footprints to symbols.
+
+### Schematic to layout
+- Before KiCAD 5 it was needed to generate a netlist and load it into the layout.
+- KiCAS 5 can do it in one step, by pressing **F8**
+
+### Layerstack
+- 2 layer: parts & routing & GND, routing & GND or VCC
+- 4 layer: parts & routing(& GND), GND, VCC, GND & routing
+
+### Layout
+- **Tip:** Always start with diff pairs.
+- **Tip:** Route mainly horizontal on one layer and mainly vertical on another.
+- Tented vias: Some say do it, some say don't. I don't really know.
+
+### Route
+- 45° angles, 90° only if really needed (T-joints and the like)
+- make polygons if possible
+- .5 mm - .3 mm are etchable in your homelab
+- vias are a pain if you etch the prints yourself
+
+### Generate gerber
+- Check if every layer you need is in the output.
+- Check the gerbers after generating them.
+
 
 ## Libraries 
 
@@ -90,11 +141,11 @@ Some handy shortcuts I found out there on the Web.
 
 | Key       | Schematic editor         | PCB Editor                     |
 |:----------|:-------------------------|:-------------------------------|
-| +         |                          | **Switch to Next Layer**       |
+| \keys{+}         |                          | **Switch to Next Layer**       |
 | -         |                          | **Switch to Previous Layer**   |
 | /         | Add Bus Entry            | Switch Track Posture           |
 | ?         | Help                     |                                |
-| A         | Add Component            |                                |
+| A         | **Add Component**        |                                |
 | B         | Begin Bus                |                                |
 | Backspace |                          | Delete Track Segment           |
 | C         | Copy Component or Label  | Copy Item                      |
@@ -116,6 +167,7 @@ Some handy shortcuts I found out there on the Web.
 | F4        | Zoom Center              |                                |
 | F5        |                          | Switch to Inner Layer 1        |
 | F6        |                          | Switch to Inner Layer 2        |
+| F8        | **Schematic to Layout**  |                                |
 | G         | **Drag Item**            | **Drag Item**                  |
 | H         | Add Hierarchical Label   | Switch Highcontrast Mode       |
 | Home      | Fit on Screen            |                                |
