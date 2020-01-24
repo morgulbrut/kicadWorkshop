@@ -119,6 +119,10 @@
 - Made by Kaspar
 - kasbah on github
 
---------
+---------
 
 ![](images/hacktheplanet.gif)
+
+### github.com/morgulbrut/kicadWorkshop
+
+Branch: SAO-Workshop 
