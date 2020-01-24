@@ -1,8 +1,7 @@
 ---
 header-includes: 
-   \usepackage{menukeys}
+   \usepackage[os=win]{menukeys}
 ---
-
 
 # Shitty add-on
 
@@ -44,7 +43,7 @@ See **Windows**
 
 An Inkscape plugin we use for PCB art, get it from [https://github.com/badgeek/svg2shenzhen](https://github.com/badgeek/svg2shenzhen) and install it as described there.
 
-**Linux:** be sure to have lxml for python2 installed.
+**Linux:** be sure to have lxml for python2 installed. 
 
 ## Shitty Add-On library
 
@@ -68,15 +67,15 @@ That's roughly the workflow I use. You maybe found one which suits you better.
 
 ## svg2shenzen & Inkscape
 
-1. Initalize a new drawing using *Extensions* $\rightarrow$ *Svg2Shenzhen* $\rightarrow$ *Prepare Document...*
+1. Initalize a new drawing using \menu{Extensions > Svg2Shenzhen > Prepare Document...}
 2. Draw your thing. 
    1. Keep in mind, there are some layer combinations that make no sense.
    2. If the layers has the suffix *disabled* it is disabled. Rename it from *<X>-disabled* to *<X>*.
    3. Check if the layers are dark enough.
 3. Convert objects to paths.
 4. Export to KiCad.
-   1. Check *Open Kicad after export?*.
-   2. Uncheck *Open PCBWay after export?*.
+   1. Check \menu{Open Kicad after export?}.
+   2. Uncheck \menu{Open PCBWay after export?}.
    
 ## KiCad
 
@@ -94,7 +93,7 @@ That's roughly the workflow I use. You maybe found one which suits you better.
 
 ### Schematic to layout
 - Before KiCAD 5 it was needed to generate a netlist and load it into the layout.
-- KiCAS 5 can do it in one step, by pressing **F8**
+- KiCAS 5 can do it in one step, by pressing \keys{F8}
 
 ### Layerstack
 - 2 layer: parts & routing & GND, routing & GND or VCC
@@ -141,59 +140,59 @@ Some handy shortcuts I found out there on the Web.
 
 | Key       | Schematic editor         | PCB Editor                     |
 |:----------|:-------------------------|:-------------------------------|
-| \keys{+}         |                          | **Switch to Next Layer**       |
-| -         |                          | **Switch to Previous Layer**   |
-| /         | Add Bus Entry            | Switch Track Posture           |
-| ?         | Help                     |                                |
-| A         | **Add Component**        |                                |
-| B         | Begin Bus                |                                |
-| Backspace |                          | Delete Track Segment           |
-| C         | Copy Component or Label  | Copy Item                      |
-| Ctrl+F    |                          | Find Item                      |
-| Ctrl+L    |                          | Load Board                     |
-| Ctrl+S    |                          | Save Board                     |
-| Ctrl+V    |                          | Add Microvia                   |
-| Ctrl+W    |                          | Switch Track Width to Previous |
-| Ctrl+Y    |                          | Redo                           |
-| Ctrl+Z    |                          | Undo                           |
-| D         |                          | Drag Track, Keep Slope         |
-| Del       | **Delete Item**          | Delete Item                    |
-| E         | **Edit Item**            | Edit Item                      |
-| End       |                          | End Track                      |
-| F         | Edit Footprint           | Flip Item                      |
-| F1        | Zoom In                  |                                |
-| F2        | Zoom Out                 |                                |
-| F3        | Zoom Redraw              |                                |
-| F4        | Zoom Center              |                                |
-| F5        |                          | Switch to Inner Layer 1        |
-| F6        |                          | Switch to Inner Layer 2        |
-| F8        | **Schematic to Layout**  |                                |
-| G         | **Drag Item**            | **Drag Item**                  |
-| H         | Add Hierarchical Label   | Switch Highcontrast Mode       |
-| Home      | Fit on Screen            |                                |
-| Insert    | Repeat Lest Item         |                                |
-| J         | Add Junction             |                                |
-| K         | End Line Wire Bus        | Track Display Mode             |
-| L         | Add Label                | Lock/Unlock Footprint          |
-| M         | **Move Item**            | **Move Item**                  |
-| N         | Orient Normal Component  |                                |
-| O         |                          | Add Module                     |
-| P         | **Add Power**            | **Place Item**                 |
-| PgDn      |                          | Switch to Cooper Layer         |
-| PgUp      |                          | Switch to Component Layer      |
-| Q         | Add No Connect Flag      |                                |
-| R         | **Rotate Item**          | **Rotate Item**                |
-| S         | Add Sheet                |                                |
-| Spacebar  |                          | Reset Local Coordinates        |
-| T         |                          | Get and Move Footprint         |
-| Tab       | Move Block -> Drag Block |                                |
-| U         | Edit Reference           |                                |
-| V         | Edit Value               | **Add Via**                    |
-| W         | **Begin Wire**           | Switch Track Width to Next     |
-| X         | **Mirror X Component**   | **Add New Track**              |
-| Y         | **Mirror Y Component**   |                                |
-| Z         | Add Wire Entry           |                                |
-| Alt+3     |                          | **3D Viewer**                  |
+| \keys[/]{+}  |                          | **Switch to Next Layer**       |
+| \keys{-}        |                          | **Switch to Previous Layer**   |
+| \keys{/}        | Add Bus Entry            | Switch Track Posture           |
+| \keys{?}        | Help                     |                                |
+| \keys{A}         | **Add Component**        |                                |
+| \keys{B}         | Begin Bus                |                                |
+| \keys{\backspace} |                          | Delete Track Segment           |
+| \keys{C}         | Copy Component or Label  | Copy Item                      |
+| \keys{\ctrl+F}    |                          | Find Item                      |
+| \keys{\ctrl+L}    |                          | Load Board                     |
+| \keys{\ctrl+S}   |                          | Save Board                     |
+| \keys{\ctrl+V}   |                          | Add Microvia                   |
+| \keys{\ctrl+W}   |                          | Switch Track Width to Previous |
+| \keys{\ctrl+Y}   |                          | Redo                           |
+| \keys{\ctrl+Z}   |                          | Undo                           |
+| \keys{D}         |                          | Drag Track, Keep Slope         |
+| \keys{\del}       | **Delete Item**          | Delete Item                    |
+| \keys{E}         | **Edit Item**            | Edit Item                      |
+| \keys{End}       |                          | End Track                      |
+| \keys{F}         | Edit Footprint           | Flip Item                      |
+| \keys{F1}        | Zoom In                  |                                |
+| \keys{F2}        | Zoom Out                 |                                |
+| \keys{F3}        | Zoom Redraw              |                                |
+| \keys{F4}        | Zoom Center              |                                |
+| \keys{F5}        |                          | Switch to Inner Layer 1        |
+| \keys{F6}        |                          | Switch to Inner Layer 2        |
+| \keys{F8}        | **Schematic to Layout**  |                                |
+| \keys{G}         | **Drag Item**            | **Drag Item**                  |
+| \keys{H}         | Add Hierarchical Label   | Switch Highcontrast Mode       |
+| \keys{Home}      | Fit on Screen            |                                |
+| \keys{Insert}    | Repeat Lest Item         |                                |
+| \keys{J}         | Add Junction             |                                |
+| \keys{K}         | End Line Wire Bus        | Track Display Mode             |
+| \keys{L}         | Add Label                | Lock/Unlock Footprint          |
+| \keys{M}         | **Move Item**            | **Move Item**                  |
+| \keys{N}         | Orient Normal Component  |                                |
+| \keys{O}         |                          | Add Module                     |
+| \keys{P}         | **Add Power**            | **Place Item**                 |
+| \keys{PgDn}      |                          | Switch to Cooper Layer         |
+| \keys{PgUp}     |                          | Switch to Component Layer      |
+| \keys{Q}         | Add No Connect Flag      |                                |
+| \keys{R}         | **Rotate Item**          | **Rotate Item**                |
+| \keys{S}         | Add Sheet                |                                |
+| \keys{\Space}  |                          | Reset Local Coordinates        |
+| \keys{T}         |                          | Get and Move Footprint         |
+| \keys{\tab}       | Move Block -> Drag Block |                                |
+| \keys{U}         | Edit Reference           |                                |
+| \keys{V}         | Edit Value               | **Add Via**                    |
+| \keys{W}         | **Begin Wire**           | Switch Track Width to Next     |
+| \keys{X}         | **Mirror X Component**   | **Add New Track**              |
+| \keys{Y}         | **Mirror Y Component**   |                                |
+| \keys{Z}         | Add Wire Entry           |                                |
+| \keys{\Alt+3}     |                          | **3D Viewer**                  |
 
 # Links
 - [KiCAD getting started](http://docs.kicad-pcb.org/5.1.2/en/getting_started_in_kicad/getting_started_in_kicad.html)
