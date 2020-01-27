@@ -6,7 +6,7 @@
 *.fls
 *.fdb_latexmk
 *.dvi
-SOA_examples/.svg2shenzhen-cache/
-SOA_examples/tv-b-gone/tbg_sao.kicad_pcb-bak
-
+*.svg2shenzhen-cache/
+*.kicad_pcb-bak
+*.sch-bak
 *.code-workspace
