@@ -43,7 +43,10 @@ See **Windows**
 
 An Inkscape plugin we use for PCB art, get it from [https://github.com/badgeek/svg2shenzhen](https://github.com/badgeek/svg2shenzhen) and install it as described there.
 
-**Linux:** be sure to have lxml for python2 installed. 
+### Linux:
+
+- be sure to have lxml for python2 installed.
+- be sure to set the exec bits correctly. [https://github.com/badgeek/svg2shenzhen/issues/52]{https://github.com/badgeek/svg2shenzhen/issues/52}
 
 ## Shitty Add-On library
 
@@ -113,7 +116,6 @@ That's roughly the workflow I use. You maybe found one which suits you better.
 ### Generate gerber
 - Check if every layer you need is in the output.
 - Check the gerbers after generating them.
-
 
 ## Libraries 
 
