@@ -138,60 +138,60 @@ your_kickass_project
 
 Some handy shortcuts I found out there on the Web.
 
-| Key       | Schematic editor         | PCB Editor                     |
-|:----------|:-------------------------|:-------------------------------|
-| \keys[/]{+}  |                          | **Switch to Next Layer**       |
-| \keys{-}        |                          | **Switch to Previous Layer**   |
-| \keys{/}        | Add Bus Entry            | Switch Track Posture           |
-| \keys{?}        | Help                     |                                |
-| \keys{A}         | **Add Component**        |                                |
-| \keys{B}         | Begin Bus                |                                |
+| Key               | Schematic editor         | PCB Editor                     |
+|:------------------|:-------------------------|:-------------------------------|
+| \keys[/]{+}       |                          | **Switch to Next Layer**       |
+| \keys{-}          |                          | **Switch to Previous Layer**   |
+| \keys{/}          | Add Bus Entry            | Switch Track Posture           |
+| \keys{?}          | Help                     |                                |
+| \keys{A}          | **Add Component**        |                                |
+| \keys{B}          | Begin Bus                | **Redraw polygons**            |
 | \keys{\backspace} |                          | Delete Track Segment           |
-| \keys{C}         | Copy Component or Label  | Copy Item                      |
+| \keys{C}          | Copy Component or Label  | Copy Item                      |
 | \keys{\ctrl+F}    |                          | Find Item                      |
 | \keys{\ctrl+L}    |                          | Load Board                     |
-| \keys{\ctrl+S}   |                          | Save Board                     |
-| \keys{\ctrl+V}   |                          | Add Microvia                   |
-| \keys{\ctrl+W}   |                          | Switch Track Width to Previous |
-| \keys{\ctrl+Y}   |                          | Redo                           |
-| \keys{\ctrl+Z}   |                          | Undo                           |
-| \keys{D}         |                          | Drag Track, Keep Slope         |
+| \keys{\ctrl+S}    |                          | Save Board                     |
+| \keys{\ctrl+V}    |                          | Add Microvia                   |
+| \keys{\ctrl+W}    |                          | Switch Track Width to Previous |
+| \keys{\ctrl+Y}    |                          | Redo                           |
+| \keys{\ctrl+Z}    |                          | Undo                           |
+| \keys{D}          |                          | Drag Track, Keep Slope         |
 | \keys{\del}       | **Delete Item**          | Delete Item                    |
-| \keys{E}         | **Edit Item**            | Edit Item                      |
-| \keys{End}       |                          | End Track                      |
-| \keys{F}         | Edit Footprint           | Flip Item                      |
-| \keys{F1}        | Zoom In                  |                                |
-| \keys{F2}        | Zoom Out                 |                                |
-| \keys{F3}        | Zoom Redraw              |                                |
-| \keys{F4}        | Zoom Center              |                                |
-| \keys{F5}        |                          | Switch to Inner Layer 1        |
-| \keys{F6}        |                          | Switch to Inner Layer 2        |
-| \keys{F8}        | **Schematic to Layout**  |                                |
-| \keys{G}         | **Drag Item**            | **Drag Item**                  |
-| \keys{H}         | Add Hierarchical Label   | Switch Highcontrast Mode       |
-| \keys{Home}      | Fit on Screen            |                                |
-| \keys{Insert}    | Repeat Lest Item         |                                |
-| \keys{J}         | Add Junction             |                                |
-| \keys{K}         | End Line Wire Bus        | Track Display Mode             |
-| \keys{L}         | Add Label                | Lock/Unlock Footprint          |
-| \keys{M}         | **Move Item**            | **Move Item**                  |
-| \keys{N}         | Orient Normal Component  |                                |
-| \keys{O}         |                          | Add Module                     |
-| \keys{P}         | **Add Power**            | **Place Item**                 |
-| \keys{PgDn}      |                          | Switch to Cooper Layer         |
-| \keys{PgUp}     |                          | Switch to Component Layer      |
-| \keys{Q}         | Add No Connect Flag      |                                |
-| \keys{R}         | **Rotate Item**          | **Rotate Item**                |
-| \keys{S}         | Add Sheet                |                                |
-| \keys{\Space}  |                          | Reset Local Coordinates        |
-| \keys{T}         |                          | Get and Move Footprint         |
+| \keys{E}          | **Edit Item**            | Edit Item                      |
+| \keys{End}        |                          | End Track                      |
+| \keys{F}          | Edit Footprint           | Flip Item                      |
+| \keys{F1}         | Zoom In                  |                                |
+| \keys{F2}         | Zoom Out                 |                                |
+| \keys{F3}         | Zoom Redraw              |                                |
+| \keys{F4}         | Zoom Center              |                                |
+| \keys{F5}         |                          | Switch to Inner Layer 1        |
+| \keys{F6}         |                          | Switch to Inner Layer 2        |
+| \keys{F8}         | **Schematic to Layout**  |                                |
+| \keys{G}          | **Drag Item**            | **Drag Item**                  |
+| \keys{H}          | Add Hierarchical Label   | Switch Highcontrast Mode       |
+| \keys{Home}       | Fit on Screen            |                                |
+| \keys{Insert}     | Repeat Lest Item         |                                |
+| \keys{J}          | Add Junction             |                                |
+| \keys{K}          | End Line Wire Bus        | Track Display Mode             |
+| \keys{L}          | Add Label                | Lock/Unlock Footprint          |
+| \keys{M}          | **Move Item**            | **Move Item**                  |
+| \keys{N}          | Orient Normal Component  |                                |
+| \keys{O}          |                          | Add Module                     |
+| \keys{P}          | **Add Power**            | **Place Item**                 |
+| \keys{PgDn}       |                          | Switch to Cooper Layer         |
+| \keys{PgUp}       |                          | Switch to Component Layer      |
+| \keys{Q}          | Add No Connect Flag      |                                |
+| \keys{R}          | **Rotate Item**          | **Rotate Item**                |
+| \keys{S}          | Add Sheet                |                                |
+| \keys{\Space}     |                          | Reset Local Coordinates        |
+| \keys{T}          |                          | Get and Move Footprint         |
 | \keys{\tab}       | Move Block -> Drag Block |                                |
-| \keys{U}         | Edit Reference           |                                |
-| \keys{V}         | Edit Value               | **Add Via**                    |
-| \keys{W}         | **Begin Wire**           | Switch Track Width to Next     |
-| \keys{X}         | **Mirror X Component**   | **Add New Track**              |
-| \keys{Y}         | **Mirror Y Component**   |                                |
-| \keys{Z}         | Add Wire Entry           |                                |
+| \keys{U}          | Edit Reference           |                                |
+| \keys{V}          | Edit Value               | **Add Via**                    |
+| \keys{W}          | **Begin Wire**           | Switch Track Width to Next     |
+| \keys{X}          | **Mirror X Component**   | **Add New Track**              |
+| \keys{Y}          | **Mirror Y Component**   |                                |
+| \keys{Z}          | Add Wire Entry           |                                |
 | \keys{\Alt+3}     |                          | **3D Viewer**                  |
 
 # Links
