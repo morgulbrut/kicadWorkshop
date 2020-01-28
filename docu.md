@@ -9,16 +9,11 @@ header-includes:
 
 # Prerequisites
 
-    We gonna use KiCAD 5, since there are tons of improvements. 
-
-## Building the docs
-
-Use [dotgo](https://github.com/morgulbrut/dotgo), read the markdown directly or use a better markdown to whatever transpiler.
-I'm gonna release builds from time to time
+We gonna use KiCAD 5, since there are tons of improvements. 
 
 ## KiCad and Inkscape
 
-    Disclaimer: I use Arch btw. Well and I know how to install it on windows.
+**Disclaimer:** I use Arch BTW. Well and I know how to install it on windows.
 
 I use **KiCad 5.1** and **Inkscape 0.92.4**
 
@@ -46,7 +41,7 @@ An Inkscape plugin we use for PCB art, get it from [https://github.com/badgeek/s
 ### Linux:
 
 - be sure to have lxml for python2 installed.
-- be sure to set the exec bits correctly. [https://github.com/badgeek/svg2shenzhen/issues/52]{https://github.com/badgeek/svg2shenzhen/issues/52}
+- be sure to set the exec bits correctly. [https://github.com/badgeek/svg2shenzhen/issues/52](https://github.com/badgeek/svg2shenzhen/issues/52)
 
 ## Shitty Add-On library
 
