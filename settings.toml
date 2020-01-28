@@ -8,6 +8,14 @@ variables=[
 ]
 
 [[files]]
+type="md2beamer"
+converter="pandoc"
+infile="KiCadWorkshop_en.md"
+outfile="beamer.pdf"
+header="beamer_header.tex"
+
+
+[[files]]
 title="Make your own shitty addon"
 subtitle="Welcome to \\#badgelife"
 author="Tillo"
@@ -17,6 +25,7 @@ infile="docu.md"
 outfile="docu.pdf"
 pdfengine="xelatex" # pdflatex, lualatex, xelatex, latexmk, tectonic, wkhtmltopdf, weasyprint, prince, context, and pdfroff
 converter="pandoc"
+header="docu_header.tex"
 toc=true
 numbered=true
 verbose=true
