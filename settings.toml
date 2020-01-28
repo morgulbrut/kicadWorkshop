@@ -26,5 +26,8 @@ variables=[
     "fontsize=10pt",
     "papersize=a4",
     "lang=en",
-    "urlcolor=red"
+    "urlcolor=red",
+    "mainfont=Comic Sans MS",
+    "sansfont=Comic Sans MS",
+    "monofont=Comic Sans MS",
 ]
