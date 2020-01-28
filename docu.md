@@ -1,8 +1,3 @@
----
-header-includes: 
-   \usepackage[os=win]{menukeys}
----
-
 # Shitty add-on
 
 ![Some shitty add-ons](images/shittyadd-ons.png)
