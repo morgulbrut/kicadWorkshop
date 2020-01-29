@@ -11,17 +11,27 @@
 - boomed in recent years as #badgelife
 - badges for hacker cons
 
-## Micronoise by SGMK
-![](images/Micronoise.png)
+## PCB Art
 
-## Viking Badge by Thomas Flummer
-![](images/viking-badge.jpg)
-
-## Jogjarmageddon by dusjagr 
-![](images/Jogjarmageddon.jpg)
-
-## Queercon badge 2016
-![](images/queercon.jpg)
+\begin{figure}
+      \centering
+      \only<1>
+        {%
+          \includegraphics[width=.8\textwidth]{images/Micronoise.png}%
+        }%
+      \only<2>
+        {%
+          \includegraphics[width=.8\textwidth]{images/viking-badge.jpg}%
+        }%
+      \only<3>
+        {%
+          \includegraphics[width=.8\textwidth]{images/Jogjarmageddon.jpg}%
+        }%
+    \only<4>
+        {%
+          \includegraphics[width=.8\textwidth]{images/queercon.jpg}%
+        }%
+    \end{figure}
 
 ## Shitty Add-On
 - addon for badges, originally for DEF CON
@@ -29,7 +39,7 @@
 - MZ badge will have some connectors too
 
 ## Some Shitty Add-Ons
-![](images/resize/shittyadd-ons.png)
+![](images/shittyadd-ons.png)
 
 ## SAO 1.69bis specs
 - 3V3 and GND
@@ -119,9 +129,11 @@
 - Made by Kaspar
 - kasbah on github
 
----------
+------
 
-![](images/hacktheplanet.gif)
+\begin{frame}{Embedded Animation}
+  \animategraphics[loop,controls]{10}{images/hacktheplanet-}{0}{23}
+\end{frame}
 
 ### github.com/morgulbrut/kicadWorkshop
 
