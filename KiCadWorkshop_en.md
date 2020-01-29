@@ -131,9 +131,9 @@
 
 ------
 
-\begin{frame}{Embedded Animation}
-  \animategraphics[loop,controls]{10}{images/hacktheplanet-}{0}{23}
-\end{frame}
+\begin{center}
+  \animategraphics[autoplay]{10}{images/hacktheplanet-}{0}{23}
+\end{center}
 
 ### github.com/morgulbrut/kicadWorkshop
 
