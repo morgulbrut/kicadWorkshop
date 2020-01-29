@@ -1,11 +1,10 @@
-[[files]]
-type="md2revealjs"
-converter="pandoc"
-infile="KiCadWorkshop_en.md"
-outfile="slides.html"
-variables=[
-    "theme=moon"
-]
+# [[files]]
+# type="md2revealjs"
+# infile="KiCadWorkshop_en.md"
+# outfile="slides.html"
+# variables=[
+#    "theme=moon"
+# ]
 
 [[files]]
 title="Make> your own shitty addon"
