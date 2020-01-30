@@ -1,17 +1,23 @@
-# [[files]]
-# type="md2revealjs"
-# infile="KiCadWorkshop_en.md"
-# outfile="slides.html"
-# variables=[
+#[[files]]
+#type="revealjs"
+#infile="KiCadWorkshop_en.md"
+#outfile="slides.html"
+#variables=[
 #    "theme=moon"
-# ]
+#]
+
+#[[files]]
+#type="odt"
+#infile="docu.md"
+#outfile="docu.odt"
+#converter="pandoc"
 
 [[files]]
 title="Make> your own shitty addon"
 subtitle="Welcome to \\#badgelife"
 author="Tillo"
-date="9.2.2020"
-type="md2pdf" 
+date="\\today"
+type="pdf" 
 infile="docu.md"
 outfile="docu.pdf"
 pdfengine="xelatex" # pdflatex, lualatex, xelatex, latexmk, tectonic, wkhtmltopdf, weasyprint, prince, context, and pdfroff
@@ -30,7 +36,7 @@ variables=[
 ]
 
 [[files]]
-type="md2beamer"
+type="beamer"
 converter="pandoc"
 infile="KiCadWorkshop_en.md"
 outfile="beamer.pdf"
