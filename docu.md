@@ -58,6 +58,12 @@ Since Kicads Library management is a bit quirky I usually just put the used exte
 
 That's roughly the workflow I use. You maybe found one which suits you better.
 
+## Setting up project
+
+1. In the KiCad main window make a new project \menu{File > New > Project}
+2. If if a .kicad_pcb is generated, you can delete it.
+3. Close KiCad.
+
 ## svg2shenzen & Inkscape
 
 1. Initalize a new drawing using \menu{Extensions > Svg2Shenzhen > Prepare Document...}
@@ -65,47 +71,77 @@ That's roughly the workflow I use. You maybe found one which suits you better.
    1. Keep in mind, there are some layer combinations that make no sense.
    2. If the layers has the suffix *disabled* it is disabled. Rename it from *<X>-disabled* to *<X>*.
    3. Check if the layers are dark enough.
-3. Convert objects to paths.
+   4. If you import from Illustrator, check the size.
+3. Convert objects to paths. Cleanup SVG.
 4. Export to KiCad.
    1. Check \menu{Open Kicad after export?}.
    2. Uncheck \menu{Open PCBWay after export?}.
+   3. Set the path to the directory of your project.
+   4. Export as a KiCad Layout.
    
 ## KiCad
 
 ### Draw schematics
-- Place components using 
 
-### Make components
-- Symbol
-- Footprint
-- Add 3d model(s) to a footprint (if wanted)
+1. Make sure the schematics and the layout are named equally.
+2. Place new components with \keys{A} (or using the menu on the right side of the schematics editor).
+3. Draw the connections with \keys{W} (or using the menu on the right side of the schematics editor).
+4. Doubleclick components to changes their values if needed (Resistors, Capacitors)
 
-### Annotate schematics
-- Automatically number the components.
-- Manually assign footprints to symbols.
+**Tip:** Since you can assign basically every footprint to every schematics symbol later, allways use a proper symbol. For example, if you use a pot which is connected ower some cables, use a pot symbol and assign some connector later. I used big SMD resistors as footprints for solder pads quite often.
 
-### Schematic to layout
+#### Annotate schematics & asssign footprint0
+
+1. Annotate the schematics using \menu{Tools > Annotate Schematics...}.
+2. Assign footprints using \menu{Tools > Assign Footprints...} or double click on the component.
+
+#### Schematic to layout
 - Before KiCAD 5 it was needed to generate a netlist and load it into the layout.
-- KiCAS 5 can do it in one step, by pressing \keys{F8}
+- KiCAD 5 can do it in one step, by pressing \keys{F8}
 
-### Layerstack
+
+### Layout
+1. Define the design rules, for most projects your fine with the default. Also define keepout areas, below antennas for example.
+2. Place the parts, in a meaninful way reduces complicated routing afterwards.
+3. Route all lenghtmatched / diff-pair connections
+4. Route power(\keys{X}), use polygons if possible.
+5. Route the rest. Route mainly horizontal on one layer and mainly vertical on another.
+
+#### Useful router settings.
+1. Set to GL mode (named bit differently on differen OS) using \menu{Preferences > Modern Graphics Toolset} or \menu{Preferences > GL Graphics Mode}.
+2. While routing make a right click and go to interactive Router settings.
+3. Set \menu{Mouse drag behaviour} to \menu{Interactive drag} to be able to drag traces around in a useful way.
+4. Check \menu{Mode > Shove} to push around other elements while routing.
+
+#### Layerstack
+My normally used Layerstacks are:
+
 - 2 layer: parts & routing & GND, routing & GND or VCC
 - 4 layer: parts & routing(& GND), GND, VCC, GND & routing
 
-### Layout
-- **Tip:** Always start with diff pairs.
-- **Tip:** Route mainly horizontal on one layer and mainly vertical on another.
-- Tented vias: Some say do it, some say don't. I don't really know.
-
-### Route
-- 45° angles, 90° only if really needed (T-joints and the like)
-- make polygons if possible
-- .5 mm - .3 mm are etchable in your homelab
-- vias are a pain if you etch the prints yourself
+#### Tips & Infos
+- **Tented vias** do whatever you want, tented looks cleaner but legends say the can pop if reflowed.
+- Angles should be bigger than 90°. Using a 45° raster is recommended.
+- .5 mm - .3 mm are etchable in your homelab.
+- Vias are a pain if you etch the prints yourself.
 
 ### Generate gerber
-- Check if every layer you need is in the output.
-- Check the gerbers after generating them.
+1. Go to \menu{File > Plot}.
+2. Set all the layers you want. Usually:
+    - copper layers (*.Cu*)
+    - board outline (*Edge.Cuts*)
+    - silkscreens (*F.SilkS*,*B.SilkS*)
+    - solder masks (*F.Mask*,*B.Mask*)
+    - paste masks (*F.Paste*,*B.Paste*)
+3. Set the options according to your manufacturer
+4. Set the Output directory (\path{PROJECT > gerber} for example)
+5. Generate the drill files using \menu{Generate Drill Files...}
+6. Generate the gerber files using \menu{Plot...}
+7. Check them in the Gerberviewer
+
+**Hint:** some supliers accept KiCad files directly. So you don't need to export gerbers.
+
+**Tip:** For self etching \menu{File > Print...} works way better than gerber files.
 
 ## Libraries 
 
