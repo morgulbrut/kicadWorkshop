@@ -98,7 +98,7 @@
 
 ## Schematic to layout
 - Before KiCAD 5 it was needed to generate a netlist and load it into the layout.
-- KiCAS 5 can do it in one step.
+- KiCAD 5 can do it in one step.
 
 ## Layout editor
 ![](images/layout_editor.png)
@@ -113,10 +113,10 @@
 - 4 layer: parts & routing(& GND), GND, VCC, GND & routing
 
 ## Route
-- 45° angles, 90° only if really needed (T-joints and the like)
-- make polygons if possible
+- Angles should be bigger than 90°. Using a 45° raster is recommended.
+- Make polygons if possible
 - .5 mm - .3 mm are etchable in your homelab
-- vias are a pain if you etch the prints yourself
+- Vias are a pain if you etch the prints yourself
 
 ## Generate gerber
 - Check if every layer you need is in the output.
