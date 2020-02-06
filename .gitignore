@@ -10,5 +10,7 @@
 *.kicad_pcb-bak
 *.sch-bak
 *.code-workspace
-*/fp-lib-table
-*/fp-info-cache
+SOA_examples/tv-b-gone/fp-info-cache
+SOA_examples/tv-b-gone/sym-lib-table
+SOA_examples/tv-b-gone/tbg_sao-rescue.dcm
+SOA_examples/tv-b-gone/tbg_sao-rescue.lib
