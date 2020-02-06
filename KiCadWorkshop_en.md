@@ -76,7 +76,7 @@
 
 ## EDA workflow
 - Draw schematics 
-- Annotate schematics (in KiCAD also: assign footprints to symbol) 
+- Annotate schematics (in KiCad also: assign footprints to symbol)
 - Layout 
 - Generate data 
 
@@ -114,9 +114,14 @@
 
 ## Route
 - 45° angles, 90° only if really needed (T-joints and the like)
-- make polygons if possible
+- Make polygons if possible
 - .5 mm - .3 mm are etchable in your homelab
-- vias are a pain if you etch the prints yourself
+- Vias are a pain if you etch the prints yourself
+
+## Curved traces
+- A KiCad Plugin which makes curves traces
+- Adds that hand drawn touch
+- Route first, run the plugin, get a new layout.
 
 ## Generate gerber
 - Check if every layer you need is in the output.

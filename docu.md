@@ -108,7 +108,6 @@ That's roughly the workflow I use. You maybe found one which suits you better.
 - Check the gerbers after generating them.
 
 ## Libraries 
-
 Libraries can be installed globally or for a project. If you want to share your project your mostly better off putting them into a subdirectory of your project, and then install it for that project.
 
 ```
@@ -126,9 +125,13 @@ your_kickass_project
     
 ```
 
-# Shortcuts 
+## Plugins
+KiCad has a plugin system. Unfortunately there is no offical plugin database, repo, whaterver yet.
 
-Some handy shortcuts I found out there on the Web.
+As a cool example I recommend to look at [kicad-round-tracks](https://github.com/stimulu/kicad-round-tracks).
+
+## Shortcuts 
+Some handy shortcuts I found out there on the Web. 
 
 | Key               | Schematic editor         | PCB Editor                     |
 |:------------------|:-------------------------|:-------------------------------|
@@ -187,8 +190,30 @@ Some handy shortcuts I found out there on the Web.
 | \keys{\Alt+3}     |                          | **3D Viewer**                  |
 
 # Links
-- [KiCAD getting started](http://docs.kicad-pcb.org/5.1.2/en/getting_started_in_kicad/getting_started_in_kicad.html)
+
+## KiCad
+- [KiCad forums](https://forum.kicad.info)
+- [KiCad getting started](http://docs.kicad-pcb.org/5.1.2/en/getting_started_in_kicad/getting_started_in_kicad.html)
+- [KiCad shortcuts](https://shortcutworld.com/KiCAD/win/KiCAD_Shortcuts)
+- [KiCad cheatsheet](https://silica.io/wp-content/uploads/2018/06/kicad-cheatsheet.pdf)
+- [List of KiCad 3rd party tools](https://github.com/xesscorp/kicad-3rd-party-tools)
+- [KiCad footprint collection](https://github.com/kitspace/kicad_footprints) looks insanly huge.
+- [badgelive parts KiCAD libs](https://hackaday.io/project/52950/files)
+  
+## PCB art
 - [shitty add on](https://hackaday.com/2019/03/20/introducing-the-shitty-add-on-v1-69bis-standard/)
 - [svg2shenzhen](https://github.com/badgeek/svg2shenzhen)
-- [badgelive parts KiCAD libs](https://hackaday.io/project/52950/files)
-- [KiCad shortcuts](https://shortcutworld.com/KiCAD/win/KiCAD_Shortcuts)
+
+## Electronics 
+- [awesome electronics](https://github.com/kitspace/awesome-electronics) curated list of electronics resources.
+
+## PCB Manufacturer
+  
+### Great for small PCBs
+- [Oshpark](https://oshark.com/) Purple PCBs, cheap for small PCBs. Made in the US.
+- [Aisler](https://aisler.net/) Basically Oshpark made in Europe, and you can Order the parts of your BOM as well.
+
+### Cheap and Chinese
+- [PCBWay](https://www.pcbway.com/) One of those Chinese PCB houses, who use all the same webdesigner.
+- [JLCPCB](https://jlcpcb.com) Another one, slightly cheaper than others, sponsor of Naomi Wu.
+- [Allpcb](https://www.allpcb.com/) Just another one, allows all kind of weird color combinations between silkscreen and solder mask.
