@@ -10,3 +10,5 @@
 *.kicad_pcb-bak
 *.sch-bak
 *.code-workspace
+*/fp-lib-table
+*/fp-info-cache
