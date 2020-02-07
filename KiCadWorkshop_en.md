@@ -1,5 +1,12 @@
 ![](images/title.jpg)
 
+## Schedule
+- Introduction
+- svg2shenzen & KiCad presentation
+- Demos 
+- Individual lunch
+- Make your onw 
+
 ## 'Bout me
 - Tillo
 - @morgulbrut on the twitters
