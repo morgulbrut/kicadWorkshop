@@ -35,7 +35,7 @@
 \node [proc, fill=schematic!25, right=of p0]    (p2)    {Draw \textbf{schematic}};
 \node [test, fill=schematic!25]                 (t0)    {Symbol exists};
 \node [proc, fill=schematic!25]                 (p3)    {Place symbol};
-\node [test, fill=schematic!25, join]           (t1)    {Symbols left};
+\node [test, fill=schematic!25, join]           (t1)    {Components left};
 \node [proc, fill=schematic!25]                 (p5)    {Annotate schematic};
 \node [proc, fill=schematic!25, join]                   {Associate footprints};
 \node [proc, fill=schematic!25, join]           (p6)    {Update PCB};
@@ -87,6 +87,7 @@
 \draw [->,lcnorm] (p4.south) |-  (p3);
 \draw [->,lcnorm] (p6.east) -|  (c4) -- (p7);
 \draw [->,lcnorm] (p7.south) --  (t2);
+\draw [->,lcnorm] (p11.south) |-  (p8);
 
 \end{tikzpicture}
 \end{document}
