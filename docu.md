@@ -2,11 +2,13 @@
 
 ![Some shitty add-ons](images/shittyadd-ons.png)
 
-Since the electronic badges at DEF CON became more and more sophisticated and expensive to produce (heard the 40k $ once), somebody came up with the idea of making add-ons for the badges both as a easy way to get into electronics design as well as a way to extend/hack the badges. Originally they specified a 4 pin header, for ground, 3V3, and I²C, at some point they added another two for GPIO or whatever. To clear, it's not a standard some gremium came up, but more of a "dumb" "lets do this for teh lulz" idea, which went off. 
+Since the electronic badges at DEF CON became more and more sophisticated and expensive to produce (heard the 40k $ once), somebody came up with the idea of making add-ons for the badges both as a easy way to get into electronics design as well as a way to extend/hack the badges. 
+
+Originally they specified a 4 pin header, for ground, 3V3, and I²C, at some point they added another two for GPIO or whatever. To clear, it's not a standard some gremium came up, but more of a "dumb" "lets do this for teh lulz" idea, which went off. 
 
 # Prerequisites
 
-We gonna use KiCAD 5, since there are tons of improvements. 
+We gonna use KiCad 5, since there are tons of improvements, coming from KiCad 5.
 
 ## KiCad and Inkscape
 
@@ -31,6 +33,12 @@ or if not in your package system: see **Windows**
 
 See **Windows** 
 
+#### Useful router settings.
+1. Set to GL mode (named bit differently on differen OS) using \menu{Preferences > Modern Graphics Toolset} or \menu{Preferences > GL Graphics Mode}.
+2. While routing make a right click and go to interactive Router settings.
+3. Set \menu{Mouse drag behaviour} to \menu{Interactive drag} to be able to drag traces around in a useful way.
+4. Check \menu{Mode > Shove} to push around other elements while routing.
+
 ## svg2shenzen
 
 An Inkscape plugin we use for PCB art, get it from [https://github.com/badgeek/svg2shenzhen](https://github.com/badgeek/svg2shenzhen) and install it as described there.
@@ -44,15 +52,10 @@ An Inkscape plugin we use for PCB art, get it from [https://github.com/badgeek/s
 
 Get it from [https://hackaday.io/project/52950/files](https://hackaday.io/project/52950/files)
 
-## Simple SVG
-
-Since the time is limited, you profit more, if you already bring a simple SVG. See  for some
-
-### Installation
+### Installation and setup 
 
 Since Kicads Library management is a bit quirky I usually just put the used external libraries into a folder inside my project folder. Works always.
 
-\pagebreak
 
 # Workflow
 
@@ -108,12 +111,6 @@ That's roughly the workflow I use. You maybe found one which suits you better.
 3. Route all lenghtmatched / diff-pair connections
 4. Route power(\keys{X}), use polygons if possible.
 5. Route the rest. Route mainly horizontal on one layer and mainly vertical on another.
-
-#### Useful router settings.
-1. Set to GL mode (named bit differently on differen OS) using \menu{Preferences > Modern Graphics Toolset} or \menu{Preferences > GL Graphics Mode}.
-2. While routing make a right click and go to interactive Router settings.
-3. Set \menu{Mouse drag behaviour} to \menu{Interactive drag} to be able to drag traces around in a useful way.
-4. Check \menu{Mode > Shove} to push around other elements while routing.
 
 #### Layerstack
 My normally used Layerstacks are:
