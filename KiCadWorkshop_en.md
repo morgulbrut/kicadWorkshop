@@ -66,7 +66,7 @@
 
 ## SVG2Shenzen
 - An inkscape plugin for PCB art.
-- Layer "_disable" disables that Layer.
+- Layer "-disable" disables that Layer.
 - The stuff you want to have in your design needs to be "dark".
 - made by Budi from Indonesia 
 - @manticore_ on the twitters
