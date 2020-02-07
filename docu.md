@@ -8,7 +8,7 @@ Originally they specified a 4 pin header, for ground, 3V3, and I²C, at some poi
 
 # Prerequisites
 
-We gonna use KiCad 5, since there are tons of improvements, coming from KiCad 5.
+We gonna use KiCad 5, since there are tons of improvements, coming from KiCad 4.
 
 ## KiCad and Inkscape
 
@@ -54,14 +54,14 @@ Get it from [https://hackaday.io/project/52950/files](https://hackaday.io/projec
 
 ### Installation and setup 
 
-Since Kicads Library management is a bit quirky I usually just put the used external libraries into a folder inside my project folder. Works always.
+Since KiCads Library management is a bit quirky I usually just put the used external libraries into a folder inside my project folder. Works always.
 
 
 # Workflow
 
 ![General workflow](images/workflow.png)
 
-That's roughly the workflow I use. You maybe found one which suits you better.
+That's roughly the workflow I use. You maybe find/found one which suits you better.
 
 ## Setting up project
 
