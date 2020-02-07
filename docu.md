@@ -2,6 +2,8 @@
 
 ![Some shitty add-ons](images/shittyadd-ons.png)
 
+Since the electronic badges at DEF CON became more and more sophisticated and expensive to produce (heard the 40k $ once), somebody came up with the idea of making add-ons for the badges both as a easy way to get into electronics design as well as a way to extend/hack the badges. Originally they specified a 4 pin header, for ground, 3V3, and I²C, at some point they added another two for GPIO or whatever. To clear, it's not a standard some gremium came up, but more of a "dumb" "lets do this for teh lulz" idea, which went off. 
+
 # Prerequisites
 
 We gonna use KiCAD 5, since there are tons of improvements. 
