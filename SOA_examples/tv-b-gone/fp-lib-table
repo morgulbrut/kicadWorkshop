@@ -1,4 +1,0 @@
-
-(fp_lib_table
-  (lib (name "tbg_sao")(type KiCad)(uri "$(KIPRJMOD)/tbg_sao.pretty")(options "")(descr ""))
-)
