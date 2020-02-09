@@ -1,0 +1,114 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L badgelife_shitty_addon_v169bis:Badgelife_sao_connector_v169bis X?
+U 1 1 5E3FFEBE
+P 4100 3600
+F 0 "X?" V 3635 3600 50  0000 C CNN
+F 1 "Badgelife_sao_connector_v169bis" V 3726 3600 50  0000 C CNN
+F 2 "" H 4100 3800 50  0001 C CNN
+F 3 "" H 4100 3800 50  0001 C CNN
+	1    4100 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E400B49
+P 5800 3400
+F 0 "D?" H 5793 3145 50  0000 C CNN
+F 1 "LED" H 5793 3236 50  0000 C CNN
+F 2 "" H 5800 3400 50  0001 C CNN
+F 3 "~" H 5800 3400 50  0001 C CNN
+	1    5800 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E401F4F
+P 5800 3800
+F 0 "D?" H 5793 3545 50  0000 C CNN
+F 1 "LED" H 5793 3636 50  0000 C CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5800 3800 50  0001 C CNN
+	1    5800 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3400 6200 3400
+Wire Wire Line
+	5950 3800 6200 3800
+Wire Wire Line
+	6200 3400 6200 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5E403EF7
+P 6200 3900
+F 0 "#PWR?" H 6200 3650 50  0001 C CNN
+F 1 "GND" H 6205 3727 50  0000 C CNN
+F 2 "" H 6200 3900 50  0001 C CNN
+F 3 "" H 6200 3900 50  0001 C CNN
+	1    6200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3800 6200 3900
+Connection ~ 6200 3800
+$Comp
+L Device:R R?
+U 1 1 5E404708
+P 5250 3400
+F 0 "R?" V 5043 3400 50  0000 C CNN
+F 1 "R" V 5134 3400 50  0000 C CNN
+F 2 "" V 5180 3400 50  0001 C CNN
+F 3 "~" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3400 5650 3400
+$Comp
+L Device:R R?
+U 1 1 5E404CD8
+P 5250 3800
+F 0 "R?" V 5043 3800 50  0000 C CNN
+F 1 "R" V 5134 3800 50  0000 C CNN
+F 2 "" V 5180 3800 50  0001 C CNN
+F 3 "~" H 5250 3800 50  0001 C CNN
+	1    5250 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3800 5650 3800
+Wire Wire Line
+	4650 3400 5100 3400
+Wire Wire Line
+	4650 3800 5100 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5E40626F
+P 3200 3950
+F 0 "#PWR?" H 3200 3700 50  0001 C CNN
+F 1 "GND" H 3205 3777 50  0000 C CNN
+F 2 "" H 3200 3950 50  0001 C CNN
+F 3 "" H 3200 3950 50  0001 C CNN
+	1    3200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3950 3200 3400
+Wire Wire Line
+	3200 3400 3550 3400
+$EndSCHEMATC
