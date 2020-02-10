@@ -43,10 +43,14 @@ See **Windows**
 
 An Inkscape plugin we use for PCB art, get it from [https://github.com/badgeek/svg2shenzhen](https://github.com/badgeek/svg2shenzhen) and install it as described there.
 
-### Linux:
+### Linux
 
-- be sure to have lxml for python2 installed.
-- be sure to set the exec bits correctly. [https://github.com/badgeek/svg2shenzhen/issues/52](https://github.com/badgeek/svg2shenzhen/issues/52)
+- Be sure to have lxml for python2 installed.
+- Be sure to set the exec bits correctly. [https://github.com/badgeek/svg2shenzhen/issues/52](https://github.com/badgeek/svg2shenzhen/issues/52)
+
+### Mac
+
+ - If you face problems while trying to export to KiCad on a mac: [https://github.com/badgeek/svg2shenzhen/issues/64](https://github.com/badgeek/svg2shenzhen/issues/64)
 
 ## Shitty Add-On library
 
