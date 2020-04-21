@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name badgelife_sao_v169bis)(type KiCad)(uri "/home/tillo/Dokumente/github/kicadWorkshop/SOA_examples/external libs/badgelife_sao_v169bis.pretty")(options "")(descr ""))
+)

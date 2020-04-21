@@ -191,12 +191,12 @@ $EndComp
 Wire Wire Line
 	3700 4300 3700 4500
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 5E26662A
 P 4600 4200
-F 0 "SW?" V 4554 4348 50  0000 L CNN
+F 0 "SW1" V 4554 4348 50  0000 L CNN
 F 1 "SW_Push" V 4645 4348 50  0000 L CNN
-F 2 "" H 4600 4400 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 4600 4400 50  0001 C CNN
 F 3 "~" H 4600 4400 50  0001 C CNN
 	1    4600 4200
 	0    1    1    0   
@@ -263,10 +263,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 4050 5400 3950
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5E26059E
 P 6000 4200
-F 0 "C?" H 6115 4246 50  0000 L CNN
+F 0 "C3" H 6115 4246 50  0000 L CNN
 F 1 "C" H 6115 4155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6038 4050 50  0001 C CNN
 F 3 "~" H 6000 4200 50  0001 C CNN
@@ -274,10 +274,10 @@ F 3 "~" H 6000 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5E25E200
 P 5400 4200
-F 0 "C?" H 5515 4246 50  0000 L CNN
+F 0 "C2" H 5515 4246 50  0000 L CNN
 F 1 "C" H 5515 4155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5438 4050 50  0001 C CNN
 F 3 "~" H 5400 4200 50  0001 C CNN
@@ -285,14 +285,55 @@ F 3 "~" H 5400 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 5E25CBD8
 P 5700 3950
-F 0 "Y?" H 5850 3800 50  0000 C CNN
+F 0 "Y1" H 5850 3800 50  0000 C CNN
 F 1 "8.0Mhz" H 5550 3800 50  0000 C CNN
-F 2 "" H 5700 3950 50  0001 C CNN
+F 2 "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Vertical" H 5700 3950 50  0001 C CNN
 F 3 "~" H 5700 3950 50  0001 C CNN
 	1    5700 3950
 	-1   0    0    1   
 $EndComp
+$Comp
+L badgelife_shitty_addon_v169bis:Badgelife_sao_connector_v169bis X1
+U 1 1 5E40908F
+P 5500 5650
+F 0 "X1" V 5035 5650 50  0000 C CNN
+F 1 "Badgelife_sao_connector_v169bis" V 5126 5650 50  0000 C CNN
+F 2 "badgelife_sao_v169bis:Badgelife-SAOv169-SAO-2x3" H 5500 5850 50  0001 C CNN
+F 3 "" H 5500 5850 50  0001 C CNN
+	1    5500 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0111
+U 1 1 5E40B0B2
+P 6200 5250
+F 0 "#PWR0111" H 6200 5100 50  0001 C CNN
+F 1 "VCC" H 6217 5423 50  0000 C CNN
+F 2 "" H 6200 5250 50  0001 C CNN
+F 3 "" H 6200 5250 50  0001 C CNN
+	1    6200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5250 6200 5450
+Wire Wire Line
+	6200 5450 6050 5450
+$Comp
+L power:GND #PWR0112
+U 1 1 5E40FA62
+P 4600 6100
+F 0 "#PWR0112" H 4600 5850 50  0001 C CNN
+F 1 "GND" H 4605 5927 50  0000 C CNN
+F 2 "" H 4600 6100 50  0001 C CNN
+F 3 "" H 4600 6100 50  0001 C CNN
+	1    4600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6100 4600 5450
+Wire Wire Line
+	4600 5450 4950 5450
 $EndSCHEMATC
